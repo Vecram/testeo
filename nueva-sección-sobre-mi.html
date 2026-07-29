@@ -1,30 +1,186 @@
-<!-- 
-  TODO 1: En tu terminal, crea una rama llamada 'feature/nueva-seccion-sobre-mi'
-  y conéctate a ella.
--->
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <title>sobre mi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <section class="row">
-            <article class="col-md-6">
-                <img src="/img/3135768.png" alt="Imagen de perfil" class="img-fluid rounded-circle">
+
+    <!-- Encabezado -->
+    <header class="container py-4">
+        <h1 class="text-center">Mi Página Personal</h1>
+        <p class="text-center">
+            Bienvenido a mi sitio web. Aquí encontrarás información sobre mí.
+        </p>
+
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Presentación -->
+        <section class="row align-items-center my-5">
+
+            <article class="col-md-5 text-center">
+                <img src="/img/3135768.png"
+                    alt="Imagen de perfil"
+                    class="img-fluid rounded-circle">
             </article>
 
-            <article class="col-md-6">
-                <h2>Esto es un titulo h2</h2>
-                <p>este es un parrafo descriptivo</p>
+            <article class="col-md-7">
+                <h2>Hola, soy Juan Pérez</h2>
+
+                <p>
+                    Soy estudiante de desarrollo web y me interesa aprender
+                    tecnologías como HTML, CSS, JavaScript y React.
+                </p>
+
+                <p>
+                    Disfruto crear páginas web, resolver problemas y seguir
+                    aprendiendo nuevas herramientas para convertirme en
+                    desarrollador Full Stack.
+                </p>
             </article>
+
         </section>
-    </div>
+
+        <hr>
+
+        <!-- Habilidades -->
+        <section class="my-5">
+            <h2>Mis habilidades</h2>
+
+            <div class="row">
+
+                <article class="col-md-4">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </article>
+
+                <article class="col-md-4">
+                    <h3>Programación</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </article>
+
+                <article class="col-md-4">
+                    <h3>Objetivos</h3>
+                    <ul>
+                        <li>Aprender React</li>
+                        <li>Aprender Node.js</li>
+                        <li>Conseguir mi primer empleo IT</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Intereses -->
+        <section class="my-5">
+            <h2>Mis intereses</h2>
+
+            <div class="row">
+
+                <article class="col-md-6">
+                    <h4>Tecnología</h4>
+                    <p>
+                        Me gusta conocer nuevas tecnologías y desarrollar
+                        aplicaciones web modernas.
+                    </p>
+                </article>
+
+                <article class="col-md-6">
+                    <h4>Tiempo libre</h4>
+                    <p>
+                        En mi tiempo libre disfruto leer, escuchar música,
+                        jugar videojuegos y practicar programación.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Contacto -->
+        <section class="my-5">
+
+            <h2>Contacto</h2>
+
+            <form>
+
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        class="form-control"
+                        placeholder="Ingrese su nombre">
+                </div>
+
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        class="form-control"
+                        placeholder="correo@ejemplo.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        rows="4"
+                        class="form-control"
+                        placeholder="Escriba su mensaje"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Enviar
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="container text-center py-4">
+        <hr>
+        <p>&copy; 2026 - Mi Página Personal</p>
+        <p>Desarrollado con HTML y Bootstrap.</p>
+    </footer>
 
 </body>
 
